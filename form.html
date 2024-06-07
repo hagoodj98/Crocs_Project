@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="css/main.min.css">
+    <script src="js/form.js" type="text/javascript"></script>
+  	<script src="js/jquery35.js"></script>
+  </head>
+  <body id="anchor6">
+    <a href="#anchor6" class="scrollLink"><button  id="myBtn" title="Go to top">Back to Top</button></a>
+    <div class="container">
+      <header>
+        <div class="logo"><h2 style="color: black;">Crocs</h2></div>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+          <ul>
+            <li>
+              <a href="index.html" class="active">Home</a>
+            </li>
+            <li>
+              <a href="page2.html" class="active">History</a>
+            </li>
+            <li>
+              <a href="form.html" class="active">Shop</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      
+      <div id="reparagraph">
+        <p >Register to get your very first <span id="free">Free</span> pair of Crocs?</p>
+      </div>
+
+      <form action="https://api.web3forms.com/submit" name="gender" id="genderform" class="application" method="POST">
+        <div id="gender">
+          <label><h2> Please Select Your Gender</h2></label>
+        </div>
+        <div id="genderselection">
+          <div id="boy">
+            <input type="radio" id="male" name="gender" onclick="javascript:teenboy();" value="male">
+            <label for="male"><img src="images/8fqzw8yxpkp11.jpg" alt="" ></label><br>
+          </div>
+          <div id="girl">
+            <input type="radio" id="female" name="gender"  onclick="javascript:teengirl();" value="female">
+            <label for="female"><img src="images/4pSnuIpg_400x400.jpg"  alt=""></label><br>
+          </div>
+        </div>
+<!--------------------------------Girl Form------------------------------------------------------------------>    
+      <div id="formplaceboy">
+          <div >
+            <label for="size"><h2>Choose men size:</h2></label>
+          </div>
+        <div>
+          <select name="shoesize">
+            <option value="5-6.5">5-6.5</option>
+            <option value="7-8.5">7-8.5</option>
+            <option value="9-10.5">9-10.5</option>
+            <option value="11-12.5">11-12.5</option>
+            <option value="13-14.5">13-14.5</option>
+          </select>
+        </div>
+    
+        <div class="shoechoice"> 
+          <div >
+            <label ><h2 > Select Your Shoe!!</h2></label>
+          </div>
+          <div>
+            <input type="radio" name="image" id="image1" value="<img src='images/shoesforsalemen/small-shoe1.jpg'>">
+            <label for="image1">
+            <img src='images/shoesforsalemen/small-shoe1.jpg' alt="lime green croc" class="image">
+            </label>
+            <input type="radio" name="image" id="image2" value="<img src='images/shoesforsalemen/small-shoe2.jpg'>">
+            <label for="image2">
+            <img src='images/shoesforsalemen/small-shoe2.jpg' alt="black croc" class="image">
+            </label>
+            <input type="radio" name="image" id="image3" value="<img src='images/shoesforsalemen/small-shoe3.jpg'>">
+            <label for="image3">
+            <img src='images/shoesforsalemen/small-shoe3.jpg' alt="grey croc" class="image">
+            </label>
+          </div>
+
+          <div>
+            <input type="radio" name="image" id="image4" value="<img src='images/shoesforsalemen/small-shoe4.jpg'>">
+            <label for="image4">
+              <img src='images/shoesforsalemen/small-shoe4.jpg' alt="black and orange spotted croc" class="image">
+            </label>
+            <input type="radio" name="image" id="image5" value="<img src='images/shoesforsalemen/small-shoe5.jpg'>">
+            <label for="image5">
+              <img src='images/shoesforsalemen/small-shoe5.png' alt="orange croc" class="image">
+            </label>
+          </div>
+        
+        </div>
+
+      </div>
+
+<!--------------------------------Girl Form------------------------------------------------------------------>      
+      <div id="formplacegirl">
+        <div ><!--class="choosesize" id="ladyshoesize"-->
+          <label><h2>Choose woman size:</h2></label>
+        </div>
+        <div>
+          <select name="shoesize">
+            <option value="4-5.5">4-5.5</option>
+            <option value="6-7.5">6-7.5</option>
+            <option value="8-9.5">8-9.5</option>
+            <option value="10-11.5">10-11.5</option>
+            <option value="12-13.5">12-13.5</option>
+          </select>
+        </div>
+        
+        <div class="shoechoice">
+          <div>
+            <label><h2>Select Your Shoe!!</h2></label>
+           </div>
+          <div>
+            <input type="radio" name="image" id="womanimage1" value="<img src='images/shoesforsalewomen/small-shoe1.jpg'>">
+            <label for="womanimage1">
+            <img src='images/shoesforsalewomen/small-shoe1.jpg' alt="croc with mermaid tail" class="image">
+            </label>
+            <input type="radio" name="image" id="womanimage2" value="<img src='images/shoesforsalewomen/small-shoe2.jpg'>">
+            <label for="womanimage2">
+            <img src='images/shoesforsalewomen/small-shoe2.jpg' alt="rainbow croc" class="image">
+            </label>
+            <input type="radio" name="image" id="womanimage3" value="<img src='images/shoesforsalewomen/small-shoe3.jpg'>">
+            <label for="womanimage3">
+            <img src='images/shoesforsalewomen/small-shoe3.jpg' alt="pink croc" class="image">
+            </label>
+          </div>
+
+          <div>
+            <input type="radio" name="image" id="womanimage4" value="<img src='images/shoesforsalewomen/small-shoe4.jpg'>">
+            <label for="womanimage4">
+            <img src='images/shoesforsalewomen/small-shoe4.jpg' alt="green croc with stars" class="image">
+            </label>
+            <input type="radio" name="image" id="womanimage5" value="<img src='images/shoesforsalewomen/small-shoe5.jpg'>">
+            <label for="womanimage5">
+            <img src='images/shoesforsalewomen/small-shoe5.jpg' alt="glitter purple croc" class="image">
+            </label>
+          </div>
+          
+          
+        </div>
+       
+      </div>
+      <div id="submitform"  class="contact-left">
+        <div>
+          <h2 style="color: #FCAA58;">Get Your Order Today. Select Your Pair First!</h2>
+          <hr>
+        </div>
+        <input type="hidden" name="access_key" placeholder="Your Full Name" value="c06bf84f-f5b7-49e3-9db5-70effe5ff5f7">
+        <input type="text" name="name" class="contact-inputs" placeholder="Your Full Name"  required>
+        <input type="email" name="email" class="contact-inputs" placeholder="Your Email"  required>
+        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+        <button type="submit">Submit <img src="images/arrow_icon.png" alt="" ></button>
+      </div>
+    </form>
+
+
+
+    <div class="wholerowfooter" style="background-color: #FCAA58;">
+       
+      <div class="socialicon">
+        <div>
+          <img src="images/snapchat-136-svgrepo-com.svg"  style="max-width: 50px;" alt="">
+        </div>
+        <div>
+          <img src="images/tiktok-svgrepo-com.svg" style="max-width: 50px;" alt="">
+        </div>
+       
+        <div>
+          <img src="images/instagram-svgrepo-com.svg" style="max-width: 50px;" alt="">
+        </div>
+        <div>
+          <img src="images/facebook-circle-svgrepo-com.svg" style="max-width: 50px;" alt="">
+        </div>
+    
+       </div>
+
+    <div class="hello">
+      
+      <img src="images/vector2 green copy.svg" id="greenshoeundercrochistory" style="width: 100px;"  class="shoeunderwhatarecrocs" alt="">
+      <img src="images/vector2 orange copy.svg" id="orangecrocbrandhistory" style="width: 100px;" alt="orange vector croc">
+      
+      <p style="color: black;">© 2020 Inc. All rights reserved</p>
+      
+      
+    </div>
+    
+  </div>
+    
+  </div>
+
+    <!--link to the CSS files for this menu type-->
+    <!--link to the JavaScript files (hoverIntent is optional)-->
+        <script src="js/jquery.js"></script>
+
+        <script>
+          hamburger = document.querySelector(".hamburger");
+          hamburger.onclick = function(){
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+          }
+        </script>
+        <script type="text/javascript">
+        if (window.location.hash)
+            scroll(0,0);
+        // takes care of some browsers issue
+        setTimeout(function(){scroll(0,0);},1);
+
+        $(function(){
+        //your current click function
+        $('.scroll').on('click',function(e){
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop:$($(this).attr('href')).offset().top + 'px'
+            },1000,'swing');
+        });
+
+        // if we have anchor on the url (calling from other page)
+        if(window.location.hash){
+            // smooth scroll to the anchor id
+            $('html,body').animate({
+                scrollTop:$(window.location.hash).offset().top + 'px'
+                },1000,'swing');
+            }
+        });
+
+        </script>
+        <script>
+    
+    /* ScrollLink */
+      $(document).ready(function(){
+      $( "a.scrollLink" ).click(function( event ) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
+
+    /*lookup*/
+      });
+    });
+    $.fn.closeLink = function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+    }
+
+    $(document).ready(function(){
+      $("a.scrollLink").click(function(){
+        $(this).closeLink();
+      });
+
+    });
+        </script>
+        <script>
+          // Get the button
+          let mybutton = document.getElementById("myBtn");
+          
+          // When the user scrolls down 20px from the top of the document, show the button
+          window.onscroll = function() {scrollFunction()};
+          
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+            } else {
+              mybutton.style.display = "none";
+            }
+          }
+          
+          // When the user clicks on the button, scroll to the top of the document
+          function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
+          </script>
+  </body>
+</html>

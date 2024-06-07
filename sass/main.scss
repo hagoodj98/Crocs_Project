@@ -1,0 +1,29 @@
+@import 'reset';
+
+
+
+/*************containers******************/
+@media  (max-width: 320px)  {
+@import 'mobile';
+
+}
+
+/***** media query for  IPad****/
+
+@media (min-width: 321px)  {
+@import 'ipad';
+
+}
+
+@media (min-width: 768px) {
+
+    #landingtext{
+        width: 70%;
+      }
+}
+/***** media query for Desktop****/
+@media  (min-width: 1024px){
+@import 'desktop';
+
+  
+}

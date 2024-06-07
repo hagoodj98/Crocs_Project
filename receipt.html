@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Design & Features</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/main.min.css">
+    <script src="js/simple.js"></script>
+    <script src="js/jquery35.js"></script>
+  </head>
+  <body>
+    <div class="container">
+    <div class="headwithnav">
+      <div class="logo">
+
+      </div>
+      <header>
+        <h1>Crocs</h1>
+      </header>
+      <div class="menu">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+    </div>
+    <!-- Overlay content-->
+    <div class="overlay" id="myNav">
+<!--Button to close the overlay navigation-->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="middle">
+        <div class="nav">
+          <ul>
+            <li class="item" id="profile">
+              <a href="#profile" class="btn">Home</a>
+              <div class="smenu">
+                <a href="index.html#anchor1" class="scrollLink">What are Crocs</a>
+                <a href="index.html#anchor2" class="scrollLink">Crocs History</a>
+                <a href="index.html#anchor3" class="scrollLink">Brand Origin</a>
+                <a href="index.html#anchor4" class="scrollLink">Purpose of Crocs</a>
+              </div>
+            </li>
+            <li class="item" id="messages">
+              <a href="#messages" class="btn">Laid back</a>
+              <div class="smenu">
+                  <a href="page2.html#anchor5">Customization</a>
+                  <a href="page2.html#anchor6">Made from?</a>
+                  <a href="page2.html#anchor7">Features</a>
+                  <a href="page2.html#anchor8">Style</a>
+                  <a href="page2.html#anchor9">Influencial</a>
+                  <a href="page2.html#anchor10">Cost</a>
+              </div>
+            </li>
+            <li class="item" id="settings">
+              <a href="#settings" class="btn">Join The Croc Family</a>
+              <div class="smenu">
+                <a href="form.html#anchor11" class="scrollLink">Select Your Own!</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+      <!-- Use any element to open/show the overlay navigation menu -->
+    <!--<div class="resultsentence">
+    <p>Ok, you are a <span id="result"></span></p>
+    <p>Just so we are clear. Your shoe size is <span id="shoesize"></span></p>
+  </div>
+      <div id="greencroconform">
+        <img src="images/vector2.svg" alt="">
+      </div>
+    <form name="myform" id="mainform">
+        <div class="form-controlsuccess">
+        <label >First Name:</label>
+        <input type="text" name="first" onkeyup="validate();">
+        <label><div id="errFirst"></div></label>
+        </div>
+        <div class="form-controlerror">
+        <label>Last Name:</label>
+        <input type="text" name="last" onkeyup="validate();">
+        <label><div id="errLast"></div></label>
+        </div>
+        <label>Email:</label>
+        <input type="text" name="email" onkeyup="validate();">
+        <label><div id="errEmail"></div></label>
+        <label>User Id:</label>
+        <input type="text" name="uid" onkeyup="validate();">
+        <label><div id="errUid"></div></label>
+        <input type="button" class="finalsubmit" id="create" value="Submit" onclick="application(); return false"/>
+        <p id="f1"></p>
+        <p id="last"></p>
+        <p id="email"></p>
+        <p id="user"></p>
+        <label><div id="errFinal"></div></label>
+      </form>
+
+    <footer>
+      <div class="crocpic1">
+
+      </div>
+      <div class="footerline1">
+        <p>Conditions of Use</p>
+      </div>
+      <div class="footerline2">
+        <p>Policy and Privacy</p>
+      </div>
+      <div class="footerline3">
+        <p>© 2020 Inc. All rights reserved</p>
+      </div>
+      <div class="crocpic1">
+
+      </div>
+    </footer>
+  </div>
+
+  <script type="text/javascript">
+  if (window.location.hash)
+      scroll(0,0);
+  // takes care of some browsers issue
+  setTimeout(function(){scroll(0,0);},1);
+
+  $(function(){
+  //your current click function
+  $('.scroll').on('click',function(e){
+      e.preventDefault();
+      $('html,body').animate({
+          scrollTop:$($(this).attr('href')).offset().top + 'px'
+      },1000,'swing');
+  });
+
+  // if we have anchor on the url (calling from other page)
+  if(window.location.hash){
+      // smooth scroll to the anchor id
+      $('html,body').animate({
+          scrollTop:$(window.location.hash).offset().top + 'px'
+          },1000,'swing');
+      }
+  });
+
+  </script>
+    <script>
+    function application()
+    {
+      document.getElementById('f1').innerHTML = document.myform.first.value;
+      document.getElementById('last').innerHTML = document.myform.last.value;
+      document.getElementById('email').innerHTML = document.myform.email.value;
+      document.getElementById('user').innerHTML = document.myform.uid.value;
+    }
+
+    var one,i;
+    document.getElementById("result").innerHTML="";
+    for (i = 0; i < sessionStorage.length; i++) {
+        x = sessionStorage.key(i)
+        document.getElementById("result").innerHTML=sessionStorage.getItem("checkedvalue");
+    }
+   /* Open*/
+      function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+}
+
+/* Close*/
+      function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+}
+
+/* ScrollLink */
+$(document).ready(function(){
+  $( "a.scrollLink" ).click(function( event ) {
+    event.preventDefault();
+    $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
+  });
+});
+    </script>
+  </body>
+</html>
+*/
